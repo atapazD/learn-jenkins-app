@@ -21,7 +21,10 @@ pipeline{
         }
         stage("test"){
             steps{
-                echo "Test Stage"
+                sh '''
+                echo "Test Stage..."
+                test -e public/index.html
+                '''
             }
             
         }

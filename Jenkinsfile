@@ -24,6 +24,7 @@ pipeline{
                 sh '''
                 echo "Test Stage..."
                 test -e public/index.html
+                npm test
                 '''
             }
             

@@ -35,7 +35,7 @@ pipeline{
             }
             
         }
-        stage("test"){
+        stage("E2E Test"){
             agent {
                 docker{
                     image 'mcr.microsoft.com/playwirhgt:v1.39.0-jammy'

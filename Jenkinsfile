@@ -23,7 +23,7 @@ pipeline{
             steps{
                 sh '''
                 echo "Test Stage..."
-                test -e public/index.html
+                test -f build/index.html
                 npm test
                 '''
             }

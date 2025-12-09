@@ -94,15 +94,6 @@ pipeline {
             }
         }
 
-        stage('Deploy Prod'){
-            agent {
-                docker{
-                    image 'node:18-alpine'
-                    reuseNode true
-                }
-            }
-        }
-
         stage('Staging E2E') {
             agent {
                 docker {
